@@ -1,0 +1,8 @@
+<nodes>
+    <node id="entrance" x="0" y="0"/>
+    <node id="registration" x="35" y="0"/>
+    <node id="hall" x="70" y="0"/>
+    <node id="cafe" x="70" y="30"/>
+    <!-- Робимо укриття довшим (100 метрів замість 30) -->
+    <node id="shelter" x="35" y="100"/>
+</nodes>

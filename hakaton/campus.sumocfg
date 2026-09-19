@@ -1,0 +1,6 @@
+<configuration>
+    <input>
+        <net-file value="campus.net.xml"/>
+        <route-files value="campus.rou.xml"/>
+    </input>
+</configuration>

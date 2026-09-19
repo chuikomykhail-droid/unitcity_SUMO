@@ -1,0 +1,17 @@
+<edges>
+    <!-- Вхід <-> Реєстрація -->
+    <edge id="entrance_to_reg" from="entrance" to="registration" allow="pedestrian" width="2.5"/>
+    <edge id="reg_to_entrance" from="registration" to="entrance" allow="pedestrian" width="2.5"/>
+
+    <!-- Реєстрація <-> Конференц-зал -->
+    <edge id="reg_to_hall" from="registration" to="hall" allow="pedestrian" width="3.5"/>
+    <edge id="hall_to_reg" from="hall" to="registration" allow="pedestrian" width="3.5"/>
+
+    <!-- Реєстрація <-> Укриття -->
+    <edge id="reg_to_shelter" from="registration" to="shelter" allow="pedestrian" width="10.0"/>
+    <edge id="shelter_to_reg" from="shelter" to="registration" allow="pedestrian" width="10.0"/>
+
+    <!-- Конференц-зал <-> Кафе (вузькі двері) -->
+    <edge id="hall_to_cafe" from="hall" to="cafe" allow="pedestrian" width="1.5"/>
+    <edge id="cafe_to_hall" from="cafe" to="hall" allow="pedestrian" width="1.5"/>
+</edges>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-09-19 21:22:29 by Eclipse SUMO netconvert Version 1.21.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="campus.nod.xml"/>
+        <edge-files value="campus.edg.xml"/>
+    </input>
+
+    <output>
+        <output-file value="campus.net.xml"/>
+    </output>
+
+</netconvertConfiguration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,0.00,70.00,100.00" origBoundary="0.00,0.00,70.00,100.00" projParameter="!"/>
+
+    <edge id="cafe_to_hall" from="cafe" to="hall" priority="-1">
+        <lane id="cafe_to_hall_0" index="0" allow="pedestrian" speed="13.89" length="25.00" width="1.50" shape="69.25,30.00 69.25,5.00"/>
+    </edge>
+    <edge id="entrance_to_reg" from="entrance" to="registration" priority="-1">
+        <lane id="entrance_to_reg_0" index="0" allow="pedestrian" speed="13.89" length="23.50" width="2.50" shape="0.00,-1.25 23.50,-1.25"/>
+    </edge>
+    <edge id="hall_to_cafe" from="hall" to="cafe" priority="-1">
+        <lane id="hall_to_cafe_0" index="0" allow="pedestrian" speed="13.89" length="25.00" width="1.50" shape="70.75,5.00 70.75,30.00"/>
+    </edge>
+    <edge id="hall_to_reg" from="hall" to="registration" priority="-1">
+        <lane id="hall_to_reg_0" index="0" allow="pedestrian" speed="13.89" length="20.50" width="3.50" shape="67.00,1.75 46.50,1.75"/>
+    </edge>
+    <edge id="reg_to_entrance" from="registration" to="entrance" priority="-1">
+        <lane id="reg_to_entrance_0" index="0" allow="pedestrian" speed="13.89" length="23.50" width="2.50" shape="23.50,1.25 0.00,1.25"/>
+    </edge>
+    <edge id="reg_to_hall" from="registration" to="hall" priority="-1">
+        <lane id="reg_to_hall_0" index="0" allow="pedestrian" speed="13.89" length="20.50" width="3.50" shape="46.50,-1.75 67.00,-1.75"/>
+    </edge>
+    <edge id="reg_to_shelter" from="registration" to="shelter" priority="-1">
+        <lane id="reg_to_shelter_0" index="0" allow="pedestrian" speed="13.89" length="95.00" width="10.00" shape="40.00,5.00 40.00,100.00"/>
+    </edge>
+    <edge id="shelter_to_reg" from="shelter" to="registration" priority="-1">
+        <lane id="shelter_to_reg_0" index="0" allow="pedestrian" speed="13.89" length="95.00" width="10.00" shape="30.00,100.00 30.00,5.00"/>
+    </edge>
+
+    <junction id="cafe" type="dead_end" x="70.00" y="30.00" incLanes="hall_to_cafe_0" intLanes="" shape="70.00,30.00 71.50,30.00 70.00,30.00"/>
+    <junction id="entrance" type="dead_end" x="0.00" y="0.00" incLanes="reg_to_entrance_0" intLanes="" shape="0.00,0.00 0.00,2.50 0.00,0.00"/>
+    <junction id="hall" type="dead_end" x="70.00" y="0.00" incLanes="cafe_to_hall_0 reg_to_hall_0" intLanes="" shape="68.50,5.00 71.50,5.00 71.38,2.40 71.00,0.28 70.38,-1.38 69.50,-2.56 68.38,-3.26 67.00,-3.50 67.00,3.50 67.83,3.67 68.12,3.88 68.33,4.17 68.46,4.54"/>
+    <junction id="registration" type="dead_end" x="35.00" y="0.00" incLanes="shelter_to_reg_0 hall_to_reg_0 entrance_to_reg_0" intLanes="" shape="25.00,5.00 45.00,5.00 45.17,4.17 45.38,3.88 45.67,3.67 46.04,3.54 46.50,3.50 46.50,-3.50 23.50,-2.50 23.50,2.50 24.33,2.78 24.62,3.13 24.83,3.61 24.96,4.24"/>
+    <junction id="shelter" type="dead_end" x="35.00" y="100.00" incLanes="reg_to_shelter_0" intLanes="" shape="35.00,100.00 45.00,100.00 35.00,100.00"/>
+
+</net>

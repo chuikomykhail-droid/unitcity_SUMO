@@ -1,0 +1,9 @@
+<configuration>
+    <input>
+        <net-file value="campus.net.xml"/>
+        <route-files value="campus.rou.xml"/>
+    </input>
+    <processing>
+        <time-to-teleport value="10"/>
+    </processing>
+</configuration>
